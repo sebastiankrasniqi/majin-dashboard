@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majin Community</title>
-<link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <!-- Navigation -->
@@ -12,6 +13,7 @@
         <a href="#ueber-uns">Über uns</a>
         <a href="#team">Team</a>
         <a href="#regeln">Regeln</a>
+        <a href="#status" class="nav-status">📊 Live-Status</a>
         <a href="#discord">Discord</a>
     </nav>
 
@@ -26,6 +28,20 @@
         <h2>Unser Team</h2>
         <p><strong>👑 Owner:</strong> Clanleitung</p>
         <p><strong>⚙️ Manager:</strong> Clanleitung</p>
+    </section>
+
+    <!-- Live Status Dashboard Sektion -->
+    <section id="status">
+        <h2>Server Live-Statistiken</h2>
+        <p>Unsere Community-Größe und die aktuelle Team-Präsenz vollautomatisch in Echtzeit synchronisiert:</p>
+        <div class="dashboard-wrapper">
+            <!-- Tausche diese URL aus, sobald dein Streamlit-Deploy fertig ist -->
+            <iframe
+                src="http://localhost:8501/?embed=true"
+                scrolling="no"
+                allowtransparency="true">
+            </iframe>
+        </div>
     </section>
 
     <!-- Regeln -->
@@ -62,22 +78,22 @@
         </ul>
 
         <h3>Weiteres...</h3>
-        <ul>
-            <li>Kein Leaking</li>
-            <li>Kein Doxxing</li>
-            <li>Keine Werbung</li>
-            <li>Kein Spamming</li>
+        <ul class="danger-list">
+            <li>❌ Kein Leaking</li>
+            <li>❌ Kein Doxxing</li>
+            <li>❌ Keine Werbung</li>
+            <li>❌ Kein Spamming</li>
         </ul>
         <p>
-            <a href="https://discord.com/terms" target="_blank">Discord Terms</a> |
-            <a href="https://discord.com/guidelines" target="_blank">Discord Guidelines</a>
+            <a href="https://discord.com" target="_blank">Discord Terms</a> |
+            <a href="https://discord.com" target="_blank">Discord Guidelines</a>
         </p>
     </section>
 
     <!-- Discord -->
     <section id="discord">
-        <h2>Stelle ein antrag um beizutreten!</h2>
-        <a href="https://discord.gg/XM9CXWH9rr">Majin discord joinen! </a>
+        <h2>Stelle einen Antrag um beizutreten!</h2>
+        <a href="https://discord.gg" target="_blank" class="join-btn">😈 Majin Discord joinen!</a>
     </section>
 
 </body>
